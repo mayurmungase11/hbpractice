@@ -16,7 +16,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService service;
 	
-	@PostMapping("insertEmployee")
+	@PostMapping("insertNewEmployee")
 	public String insertEmployee(@RequestBody Employee employee) {
 		
 		return service.insertEmployee(employee);
